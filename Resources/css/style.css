@@ -17,6 +17,8 @@ header {
     display: flex;
     position: fixed;
     justify-content: space-between;
+    top: 0;
+    left: 0;
 }
 
 header .logo {
@@ -26,6 +28,11 @@ header .logo {
     line-height: 1.3335;
     margin-left: 1.5rem;
     color: hsla(260, 10%, 60%, 1);
+}
+
+header img {
+    width: auto;
+    height: 3rem;
 }
 
 header .logo strong {
