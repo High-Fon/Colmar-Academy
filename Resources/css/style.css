@@ -1,5 +1,5 @@
 /* Colors
-    hsla(260, 10%, 60%, 1)
+    hsla(260, 5%, 70%, 1)
     hsla(217, 17%, 34%, 1)
 */
 
@@ -7,6 +7,11 @@ html {
     font-family:'Signika Negative';
     font-weight: normal;
     font-size: 16px;
+}
+
+main {
+    position: relative;
+    top: 3.5rem;
 }
 
 /* Header */
@@ -27,7 +32,7 @@ header .logo {
     font-size: 1.5rem;
     line-height: 1.3335;
     margin-left: 1.5rem;
-    color: hsla(260, 10%, 60%, 1);
+    color: hsla(260, 5%, 70%, 1);
 }
 
 header img {
@@ -49,4 +54,22 @@ nav a {
     text-decoration: none;
     color: hsla(217, 17%, 34%, 1);
     padding: 0 0.5rem;
+}
+
+/* Sign up */
+
+.signup {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: hsla(260, 5%, 70%, 1);
+}
+
+.signup img {
+    width: 60%;
+    margin: 2rem 1.5rem;
+}
+
+.signup .textbox {
+    margin-left: 1.5rem;
 }
