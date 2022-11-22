@@ -7,11 +7,32 @@ html {
     font-family:'Signika Negative';
     font-weight: normal;
     font-size: 16px;
+    color: hsla(217, 17%, 20%, 1);
 }
 
 main {
     position: relative;
-    top: 3.5rem;
+    top: 4rem;
+}
+
+body {
+    margin: 0;
+}
+
+h1  {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: hsla(217, 17%, 20%, 1);
 }
 
 /* Header */
@@ -22,8 +43,6 @@ header {
     display: flex;
     position: fixed;
     justify-content: space-between;
-    top: 0;
-    left: 0;
 }
 
 header .logo {
@@ -41,7 +60,7 @@ header img {
 }
 
 header .logo strong {
-    color: hsla(217, 17%, 34%, 1);
+    color: hsla(217, 17%, 20%, 1);
 }
 
 header nav {
@@ -51,8 +70,6 @@ header nav {
 }
 
 nav a {
-    text-decoration: none;
-    color: hsla(217, 17%, 34%, 1);
     padding: 0 0.5rem;
 }
 
@@ -71,5 +88,18 @@ nav a {
 }
 
 .signup .textbox {
-    margin-left: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.signup .button {
+    background-color: hsla(217, 17%, 20%, 1);
+    padding: 0.5rem 0;
+    width: 100%;
+    color: hsla(0, 100%, 100%, 0.8);
+    font-size: 1.5rem;
+    text-align: center;
 }
