@@ -25,14 +25,25 @@ h1  {
     font-weight: 700;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 h3 {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
+p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: hsla(260, 5%, 60%, 1);
+}
+
 a {
     text-decoration: none;
     color: hsla(217, 17%, 20%, 1);
+    font-size: 1.25rem;
 }
 
 /* Header */
@@ -43,6 +54,9 @@ header {
     display: flex;
     position: fixed;
     justify-content: space-between;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid hsla(260, 5%, 80%, 1);
 }
 
 header .logo {
@@ -79,7 +93,7 @@ nav a {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    background-color: hsla(260, 5%, 70%, 1);
+    background-color: hsla(260, 5%, 80%, 1);
 }
 
 .signup img {
@@ -102,4 +116,77 @@ nav a {
     color: hsla(0, 100%, 100%, 0.8);
     font-size: 1.5rem;
     text-align: center;
+}
+
+/* Information */
+
+.information {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.main-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+    border-right: 1px solid hsla(260, 5%, 80%, 1);
+}
+
+.main-item img {
+    width: 100%;
+}
+
+.main-item h2 {
+    margin: 2rem 0 1.5rem;
+}
+
+.main-item h4 {
+    margin: 1.33rem 0 0;
+}
+
+.main-item p {
+    margin: 0 0 1.5rem;
+}
+
+.side-items {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 40%;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid hsla(260, 5%, 80%, 1);
+    border-bottom: 1px solid hsla(260, 5%, 80%, 1);
+    transition: background-color 350ms, color 350ms;
+}
+
+.item:hover {
+    background-color: hsla(260, 5%, 80%, 1);
+}
+
+.item:hover p {
+    color: hsla(217, 17%, 20%, 1);
+}
+
+.item img {
+    width: 35%;
+    height: auto;
+}
+
+.item .content {
+    width: 65%;
+}
+
+.content h3,
+.content p,
+.content a {
+    margin: 0.5rem 1.25rem;
 }
