@@ -85,6 +85,11 @@ header nav {
 
 nav a {
     padding: 0 0.5rem;
+    transition: font-weight 350ms;
+}
+
+nav a:hover {
+    font-weight: bold;
 }
 
 /* Sign up */
@@ -197,4 +202,41 @@ nav a {
 .content p,
 .content a {
     margin: 0.5rem 1.25rem;
+}
+
+/* Courses */
+
+.courses {
+    background-color: hsla(260, 5%, 80%, 1);
+}
+
+.courses h2 {
+    text-align: center;
+}
+
+.courses h2 {
+    padding: 2rem 3.5rem;
+    margin: 0;
+}
+
+.board {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 3.5rem
+}
+
+.course {
+    width: 30%;
+    margin: 0 1rem 1rem;
+    background-color: white;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+}
+
+.course .content {
+    margin: 1rem 1rem 1.5rem;
 }
