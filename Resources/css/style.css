@@ -116,6 +116,10 @@ a {
     margin: 0.5rem 0;
 }
 
+.mobile {
+    display: none;
+}
+
 /* Header */
 
 header {
@@ -143,7 +147,7 @@ header img {
     height: 3rem;
 }
 
-header .logo strong {
+.logo strong {
     color: hsla(217, 17%, 20%, 1);
 }
 
@@ -160,6 +164,23 @@ nav a {
 
 nav a:hover {
     font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+    }
+
+    header .logo{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 /* Sign up */
@@ -201,12 +222,48 @@ nav a:hover {
     color: hsla(217, 17%, 20%, 1);
 }
 
+@media only screen and (max-width: 1100px) {
+    .signup {
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .signup img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .signup .textbox {
+        width: 90%;
+        align-self: center;
+        margin: 2rem 1rem;
+    }
+
+    .signup .textbox h1 {
+        margin: 0 0 2rem;
+    }
+
+    .signup .textbox h3 {
+        margin: 0 0 1.5rem;
+    }
+}
+
 /* Information */
 
 .information {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .information .main-item {
+        display: none;
+    }
+
+    .information .side-items {
+        width: 100%;
+    }
 }
 
 /* Courses */
@@ -246,7 +303,36 @@ nav a:hover {
     margin: 1rem 1rem 1.5rem;
 }
 
+@media only screen and (max-width: 1100px) {
+    .courses {
+        background-color: white;
+    }
+
+    .courses .desktop {
+        display: none;
+    }
+
+    .courses .board {
+        margin: 0 1rem;
+    }
+
+    .courses .course {
+        width: 100%;
+        background-color: hsla(260, 5%, 80%, 1);
+    }
+
+    .course .content {
+        margin: 1rem;
+    }
+}
+
 /* Thesis exhibit */
+
+.thesis-info {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
 
 .thesis .main-item {
     padding: 0 1.5rem 2rem;
@@ -268,4 +354,45 @@ nav a:hover {
 
 .thesis h3 {
     margin: 1.5rem 0 0.5rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .thesis-info .desktop {
+        display: none;
+    }
+
+    .thesis-info .main-item {
+        width: 100%;
+        padding: 0 0 2rem;
+    }
+
+    .thesis-info .main-item .desktop {
+        display: none;
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 4rem;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid hsla(260, 5%, 80%, 1);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    footer nav {
+        display: none;
+    }
 }
